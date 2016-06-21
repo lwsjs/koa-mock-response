@@ -1,7 +1,7 @@
 {
   "name": "koa-mock-response",
   "author": "Lloyd Brookes <75pound@gmail.com>",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "koa-mock-response",
   "repository": "https://github.com/75lb/koa-mock-response.git",
   "license": "MIT",
