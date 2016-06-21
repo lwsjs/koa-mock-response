@@ -1,0 +1,30 @@
+{
+  "name": "koa-mock-response",
+  "author": "Lloyd Brookes <75pound@gmail.com>",
+  "version": "0.0.0",
+  "description": "koa-mock-response",
+  "repository": "https://github.com/75lb/koa-mock-response.git",
+  "license": "MIT",
+  "main": "./lib/koa-mock-response.js",
+  "bin": {
+    "koa-mock-response": "bin/cli.js"
+  },
+  "keywords": [],
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "test": "tape test/*.js",
+    "docs": "jsdoc2md -t jsdoc2md/README.md lib/*.js > README.md; echo"
+  },
+  "dependencies": {
+    "array-back": "^1.0.3",
+    "path-to-regexp": "^1.5.3",
+    "typical": "^2.4.2"
+  },
+  "devDependencies": {
+    "koa": "^2.0.0",
+    "req-then": "^0.2.4",
+    "tape": "^4.6.0"
+  }
+}
