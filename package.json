@@ -6,9 +6,6 @@
   "repository": "https://github.com/75lb/koa-mock-response.git",
   "license": "MIT",
   "main": "./lib/koa-mock-response.js",
-  "bin": {
-    "koa-mock-response": "bin/cli.js"
-  },
   "keywords": [],
   "engines": {
     "node": ">=0.10.0"
