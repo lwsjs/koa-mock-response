@@ -3,26 +3,24 @@
   "author": "Lloyd Brookes <75pound@gmail.com>",
   "version": "0.0.2",
   "description": "koa-mock-response",
-  "repository": "https://github.com/75lb/koa-mock-response.git",
+  "repository": "https://github.com/lwsjs/koa-mock-response.git",
   "license": "MIT",
-  "main": "./lib/koa-mock-response.js",
-  "keywords": [],
+  "keywords": [ "lws", "koa", "mock" ],
   "engines": {
-    "node": ">=0.10.0"
+    "node": ">=7.6"
   },
   "scripts": {
-    "test": "tape test/*.js",
-    "docs": "jsdoc2md -t jsdoc2md/README.md lib/*.js > README.md; echo"
+    "test": "tape test/*.js"
   },
   "dependencies": {
-    "array-back": "^1.0.3",
-    "path-to-regexp": "^1.5.3",
-    "test-value": "^2.0.0",
-    "typical": "^2.4.2"
+    "array-back": "^1.0.4",
+    "path-to-regexp": "^1.7.0",
+    "test-value": "^2.1.0",
+    "typical": "^2.6.1"
   },
   "devDependencies": {
-    "koa": "^2.0.0",
+    "koa": "^2.2.0",
     "req-then": "^0.2.4",
-    "tape": "^4.6.0"
+    "tape": "^4.6.3"
   }
 }
