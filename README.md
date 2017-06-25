@@ -6,8 +6,6 @@
 
 # koa-mock-response
 
-## Mock Responses
-
 Mocks give you full control over the response headers and body returned to the client. They can be used to return anything from a simple html string to a resourceful REST API. Typically, they're used to mock services but can be used for anything.
 
 In the config, define an array called `mocks`. Each mock definition maps a <code>[route](http://expressjs.com/guide/routing.html#route-paths)</code> to a `response`. A simple home page:
@@ -246,4 +244,6 @@ const mockResponses = [
 module.exports = mockResponses
 ```
 
-[Example](https://github.com/75lb/local-web-server/tree/master/example/mock).
+* * *
+
+&copy; 2017 Lloyd Brookes <75pound@gmail.com>.
