@@ -14,7 +14,8 @@ function mockResponses (route, targets) {
 
       /* find a mock with compatible method and accepts */
       let target = targets.find(target => {
-        return (target.request.method === undefined || target.request.method === ctx.method)
+        return target.request
+          && (!target.request.method || (target.request.method && target.request.method === ctx.method))
           && (!target.request.accepts || ctx.request.accepts(target.request.accepts))
           && (!target.request.is || ctx.request.is(target.request.is))
       })
