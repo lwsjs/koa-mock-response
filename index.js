@@ -11,16 +11,12 @@ function mockResponses (route, targets) {
 
   return function mockResponse (ctx, next) {
     if (pathRe.test(ctx.path)) {
-      const testValue = require('test-value')
 
       /* find a mock with compatible method and accepts */
       let target = targets.find(target => {
-        return testValue(target, {
-          request: {
-            method: [ ctx.method, undefined ],
-            accepts: type => ctx.accepts(type)
-          }
-        })
+        return (target.request.method === undefined || target.request.method === ctx.method)
+          && (!target.request.accepts || ctx.request.accepts(target.request.accepts))
+          && (!target.request.is || ctx.request.is(target.request.is))
       })
 
       /* else take the first target without a request (no request means 'all requests') */

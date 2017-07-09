@@ -19,7 +19,6 @@
   "dependencies": {
     "array-back": "^2.0.0",
     "path-to-regexp": "^1.7.0",
-    "test-value": "^2.1.0",
     "typical": "^2.6.1"
   },
   "devDependencies": {
