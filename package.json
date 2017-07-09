@@ -1,7 +1,7 @@
 {
   "name": "koa-mock-response",
   "author": "Lloyd Brookes <75pound@gmail.com>",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Mock a Rest API or any backend service.",
   "repository": "https://github.com/lwsjs/koa-mock-response.git",
   "license": "MIT",
