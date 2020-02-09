@@ -1,7 +1,7 @@
 [![view on npm](https://img.shields.io/npm/v/koa-mock-response.svg)](https://www.npmjs.org/package/koa-mock-response)
 [![npm module downloads](https://img.shields.io/npm/dt/koa-mock-response.svg)](https://www.npmjs.org/package/koa-mock-response)
 [![Build Status](https://travis-ci.org/lwsjs/koa-mock-response.svg?branch=master)](https://travis-ci.org/lwsjs/koa-mock-response)
-[![Dependency Status](https://david-dm.org/lwsjs/koa-mock-response.svg)](https://david-dm.org/lwsjs/koa-mock-response)
+[![Dependency Status](https://badgen.net/david/dep/lwsjs/koa-mock-response)](https://david-dm.org/lwsjs/koa-mock-response)
 [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](https://github.com/feross/standard)
 
 # koa-mock-response
@@ -246,4 +246,4 @@ module.exports = mockResponses
 
 * * *
 
-&copy; 2017 Lloyd Brookes <75pound@gmail.com>.
+&copy; 2017-20 Lloyd Brookes <75pound@gmail.com>.

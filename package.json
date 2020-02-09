@@ -11,19 +11,19 @@
     "mock"
   ],
   "engines": {
-    "node": ">=7.6"
+    "node": ">=10"
   },
   "scripts": {
     "test": "test-runner test.js"
   },
   "dependencies": {
-    "array-back": "^2.0.0",
-    "path-to-regexp": "^1.7.0",
-    "typical": "^2.6.1"
+    "array-back": "^4.0.1",
+    "path-to-regexp": "^6.1.0",
+    "typical": "^6.0.0"
   },
   "devDependencies": {
-    "koa": "^2.3.0",
+    "koa": "^2.11.0",
     "req-then": "^0.6.4",
-    "test-runner": "^0.4.0"
+    "test-runner": "^0.8.13"
   }
 }

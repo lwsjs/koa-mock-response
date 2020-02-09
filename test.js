@@ -1,5 +1,4 @@
-'use strict'
-const TestRunner = require('test-runner')
+const Tom = require('test-runner').Tom
 const request = require('req-then')
 const Koa = require('koa')
 const mockResponse = require('./')
@@ -7,7 +6,7 @@ const a = require('assert')
 const url = require('url')
 const http = require('http')
 
-const runner = new TestRunner()
+const tom = module.exports = new Tom()
 
 function listen (server, port) {
   return new Promise((resolve, reject) => {
@@ -17,7 +16,7 @@ function listen (server, port) {
   })
 }
 
-runner.test('mock: simple response', async function () {
+tom.test('mock: simple response', async function () {
   const port = 8100 + this.index
   const app = new Koa()
   app.use(mockResponse('/test', { response: { body: 'test' } }))
@@ -29,7 +28,7 @@ runner.test('mock: simple response', async function () {
   a.ok(/test/.test(response.data.toString()))
 })
 
-runner.test('mock: method request filter', async function () {
+tom.test('mock: method request filter', async function () {
   const port = 8100 + this.index
   const app = new Koa()
   app.use(mockResponse('/test', {
@@ -50,7 +49,7 @@ runner.test('mock: method request filter', async function () {
   a.ok(/test/.test(response2.data.toString()))
 })
 
-runner.test('mock: accepts request filter', async function () {
+tom.test('mock: accepts request filter', async function () {
   const port = 8100 + this.index
   const app = new Koa()
   app.use(mockResponse('/test', {
@@ -74,7 +73,7 @@ runner.test('mock: accepts request filter', async function () {
   a.ok(/test/.test(response2.data.toString()))
 })
 
-runner.test('mock: responses array', async function () {
+tom.test('mock: responses array', async function () {
   const port = 8100 + this.index
   const app = new Koa()
   app.use(mockResponse('/test', [
@@ -97,7 +96,7 @@ runner.test('mock: responses array', async function () {
   server.close()
 })
 
-runner.test('mock: response function', async function () {
+tom.test('mock: response function', async function () {
   const port = 8100 + this.index
   const app = new Koa()
   app.use(mockResponse('/test', [
@@ -120,7 +119,7 @@ runner.test('mock: response function', async function () {
   server.close()
 })
 
-runner.test('mock: response function args', async function () {
+tom.test('mock: response function args', async function () {
   const port = 8100 + this.index
   const app = new Koa()
   app.use(mockResponse('/test/:one', [
@@ -136,7 +135,7 @@ runner.test('mock: response function args', async function () {
   server.close()
 })
 
-runner.test('mock: async response function', async function () {
+tom.test('mock: async response function', async function () {
   const port = 8100 + this.index
   const app = new Koa()
   app.use(mockResponse('/test', {

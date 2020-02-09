@@ -1,7 +1,6 @@
-'use strict'
 const arrayify = require('array-back')
 const t = require('typical')
-const pathToRegexp = require('path-to-regexp')
+const { pathToRegexp } = require('path-to-regexp')
 
 module.exports = mockResponses
 
